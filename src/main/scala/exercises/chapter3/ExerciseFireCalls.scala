@@ -35,7 +35,7 @@ object ExerciseFireCalls {
       ,StructField("Neighborhood", StringType, true)
       ,StructField("Location", StringType, true)
       ,StructField("RowID", StringType, true)
-      ,StructField("Delay", FloatType, true)))
+      ,StructField("Delay", FloatType, true))) //Esto lo hubiera hecho con .option("inferSchema", "true") a la hora de hacer el .csv("ruta")
 
     val path = "src/main/resources/chapter3/sf-fire-calls.csv"
 
