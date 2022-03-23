@@ -12,7 +12,7 @@ object ExerciseCensus {
 
 
     val df = csv.readCsvHeaderIgnoreWhiteSpace("src/main/resources/census/Rango_Edades_Seccion_202203.csv","true",";")
-      .na.fill(0)
+      .na.fill(0)                                            //no entiendo muy bien lo que hace el na
       .withColumn("DESC_DISTRITO",trim($"DESC_DISTRITO"))
       .withColumn("DESC_BARRIO",trim($"DESC_BARRIO"))
 
