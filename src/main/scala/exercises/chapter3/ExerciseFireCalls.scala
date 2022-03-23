@@ -35,7 +35,7 @@ object ExerciseFireCalls {
       ,StructField("Neighborhood", StringType, true)
       ,StructField("Location", StringType, true)
       ,StructField("RowID", StringType, true)
-      ,StructField("Delay", FloatType, true)))
+      ,StructField("Delay", FloatType, true))) // en esta parte yo lo metería solo con la lectura de csv
 
     val path = "src/main/resources/chapter3/sf-fire-calls.csv"
 
